@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'DA5_Admin'`, () => {
+  it(`should have as title 'adminh'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('DA5_Admin');
+    expect(app.title).toEqual('adminh');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('DA5_Admin app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('adminh app is running!');
   });
 });
